@@ -1,2 +1,3 @@
 # report
-LaTeX report with additional files
+
+LaTeX report (in Polish) with additional files.
