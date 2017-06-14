@@ -43,8 +43,14 @@ Ponadto udostępniamy użytkownikom \textit{ranking globalny} oraz \textit{opisy
 \section{Działanie aplikacji}
 \subsection{Tworzenie rankingu}
 
-Aplikacja ma na celu tworzenie rankingów użytkownika, dlatego też pierwszym krokiem po odpaleniu aplikacji, powinno być stworzenie rankingu. W tym celu należy nacisnąć przycisk w prawym dolnym rogu ekranu. Przeprowadzi nas on do okna wyboru filtrów dla nowo tworzonego rankingu. W bierzącej wersji aplikacji można jedynie wybrać kraj pochodzenia imienia oraz płeć związaną z imieniem. 
-Po skonfigurowaniu rankingu ponownie wybieramy przycisk w prawym dolnym rogu, co spowoduje utworzenie nowego rankingu i powrót do głównego okna aplikacji. Rankingi tworzone są z domyślną nazwą, którą można później zmienić wchodząc w dany ranking i wybierając opcję 'Change ranking name' z prawego górnego rogu ekranu. 
+Aplikacja ma na celu tworzenie rankingów użytkownika, dlatego też pierwszym krokiem po odpaleniu aplikacji, powinno być stworzenie rankingu.
+W tym celu należy nacisnąć przycisk w prawym dolnym rogu ekranu.
+Przeprowadzi nas on do okna wyboru filtrów dla nowo tworzonego rankingu.
+W bierzącej wersji aplikacji można jedynie wybrać kraj pochodzenia imienia oraz płeć związaną z imieniem.
+
+Po skonfigurowaniu rankingu ponownie wybieramy przycisk w prawym dolnym rogu, co spowoduje utworzenie nowego rankingu i powrót do głównego okna aplikacji.
+Rankingi tworzone są z domyślną nazwą, którą można później zmienić wchodząc w dany ranking i wybierając opcję 'Change ranking name' z prawego górnego rogu ekranu.
+
 Po stworzeniu nowego rankingu można się zabrać za ocenianie imion.
 
 \subsection{Ocenianie imion}
@@ -109,7 +115,14 @@ W zestawieniu umożliwiają one wygodną realizację mapowania odpowiednich \tex
 
 Poza powyższymi bibliotekami, nie mieliśmy potrzeby wykorzystywania innych niż te, które są dostarczane przez domyślne androidowe SDK.
 
-Kolejne ekrany aplikacji tworzone są głównie za pomocą fragmentów. Wykorzystujemy jedynie dwie aktywności. Jedna z nich stanowi główną aktywność aplikacji, której wnętrze podmieniane jest kolejnymi fragmentami. Druga natomiast odpowiada za wyświetlanie opisu imienia, gdyż uznaliśmy to za odrębną funkcjonalność. Wieloktornie wykorzystywanym przez nas widokiem był RecyclerView. Pozwalał on zarówno na wyświetlenie listy rankingów, stworzonych przez użytkownika w postaci kafelków w ekranie głównym aplikacji, jak i listy imion występujących w danym rankingu, jako zwykłej listy. W przypadku ustawień filtrów przy tworzeniu nowego rankingu zastosowaliśmy fragemnt dziedziczący po PreferenceFragmentCompat. Umożliwiło nam to umieszczenie w preferencji niestandardowej opcji w postaci przycisków do wyboru płci imion z rankingu. 
+Kolejne ekrany aplikacji tworzone są głównie za pomocą fragmentów.
+Wykorzystujemy jedynie dwie aktywności.
+Jedna z nich stanowi główną aktywność aplikacji, której wnętrze podmieniane jest kolejnymi fragmentami.
+Druga natomiast odpowiada za wyświetlanie opisu imienia, gdyż uznaliśmy to za odrębną funkcjonalność.
+Wieloktornie wykorzystywanym przez nas widokiem był RecyclerView.
+Pozwalał on zarówno na wyświetlenie listy rankingów, stworzonych przez użytkownika w postaci kafelków w ekranie głównym aplikacji, jak i listy imion występujących w danym rankingu, jako zwykłej listy.
+W przypadku ustawień filtrów przy tworzeniu nowego rankingu zastosowaliśmy fragemnt dziedziczący po PreferenceFragmentCompat.
+Umożliwiło nam to umieszczenie w preferencji niestandardowej opcji w postaci przycisków do wyboru płci imion z rankingu. 
 
 Klient używa bazy danych SQLite do przechowywania informacji dot. utworzonych rankingów, loginu i hasła użytkownika, a także bazy imion.
 
