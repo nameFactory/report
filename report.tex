@@ -109,6 +109,8 @@ W zestawieniu umożliwiają one wygodną realizację mapowania odpowiednich \tex
 
 Poza powyższymi bibliotekami, nie mieliśmy potrzeby wykorzystywania innych niż te, które są dostarczane przez domyślne androidowe SDK.
 
+Kolejne ekrany aplikacji tworzone są głównie za pomocą fragmentów. Wykorzystujemy jedynie dwie aktywności. Jedna z nich stanowi główną aktywność aplikacji, której wnętrze podmieniane jest kolejnymi fragmentami. Druga natomiast odpowiada za wyświetlanie opisu imienia, gdyż uznaliśmy to za odrębną funkcjonalność. Wieloktornie wykorzystywanym przez nas widokiem był RecyclerView. Pozwalał on zarówno na wyświetlenie listy rankingów, stworzonych przez użytkownika w postaci kafelków w ekranie głównym aplikacji, jak i listy imion występujących w danym rankingu, jako zwykłej listy. W przypadku ustawień filtrów przy tworzeniu nowego rankingu zastosowaliśmy fragemnt dziedziczący po PreferenceFragmentCompat. Umożliwiło nam to umieszczenie w preferencji niestandardowej opcji w postaci przycisków do wyboru płci imion z rankingu. 
+
 Klient używa bazy danych SQLite do przechowywania informacji dot. utworzonych rankingów, loginu i hasła użytkownika, a także bazy imion.
 
 \subsection{Serwer}
